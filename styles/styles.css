@@ -70,7 +70,7 @@ body.appear {
 }
 
 header {
-    height: var(--nav-height);
+    block-size: var(--nav-height);
 }
 
 h1,
@@ -82,8 +82,8 @@ h6 {
     font-family: var(--heading-font-family);
     font-weight: 600;
     line-height: 1.25;
-    margin-top: 1em;
-    margin-bottom: .5em;
+    margin-block-start: 1em;
+    margin-block-end: .5em;
     scroll-margin: calc(var(--nav-height) + 1em);
 }
 
@@ -117,8 +117,8 @@ ol,
 ul,
 pre,
 blockquote {
-    margin-top: 1em;
-    margin-bottom: 1em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
 }
 
 code,
@@ -202,20 +202,20 @@ button.secondary {
 }
 
 main img {
-    max-width: 100%;
-    width: auto;
-    height: auto;
+    max-inline-size: 100%;
+    inline-size: auto;
+    block-size: auto;
 }
 
 .icon {
     display: inline-block;
-    height: 24px;
-    width: 24px;
+    block-size: 24px;
+    inline-size: 24px;
 }
 
 .icon img {
-    height: 100%;
-    width: 100%;
+    block-size: 100%;
+    inline-size: 100%;
 }
 
 
@@ -233,7 +233,7 @@ main .section {
 
 @media (width >=900px) {
     .section>div {
-        max-width: 1200px;
+        max-inline-size: 1200px;
         margin: auto;
     }
 }
